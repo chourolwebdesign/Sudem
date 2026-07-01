@@ -140,10 +140,10 @@ const MiniOyun = (() => {
      Karışık harflerden romantik Türkçe kelimeyi diz. */
   const KELIMELER = [
     { k: "ÖZLEM",  ip: "Kalbimin sana en çok yaptığı şey..." },
+    { k: "MİNNAK", ip: "Ayağının ucunda uyuyan tatlış şey 🐱" },
+    { k: "YILDIZ", ip: "Gece 2'de aynı gökyüzünde baktığımız şey ✨" },
+    { k: "İHTİYAÇ", ip: "İsteme değil... 😤❤️" },
     { k: "SEVGİ",  ip: "Aramızdaki en güçlü bağ 💕" },
-    { k: "YILDIZ", ip: "Gece aynı gökyüzünde baktığımız şey ✨" },
-    { k: "MEKTUP", ip: "Sana yazmak istediğim en eski moda şey 💌" },
-    { k: "KALBİM", ip: "Sende olan şey ❤️" },
     { k: "SARILMAK", ip: "Buluşunca ilk yapacağımız şey 🤗" },
   ];
 

@@ -1,10 +1,11 @@
-# 🌸 Sude — iki şehir, bir kalp ❤️
+# 🌸 Sude — 2023'ten beri... bizim hikayemiz ❤️
 
 Sude için, sevgiyle yapılmış bir oyun. 💝
 
-3 yıllık bir uzak mesafe ilişkisinin bütün yolculuğu: gece yarısı tanışma,
-ilk "seni seviyorum", küçük fırtınalar, kayan yıldızlara tutulan dilekler...
-ve sonunda kalbinin vereceği karar.
+**Gerçek bir hikayeden:** 2023'te öylesine atılan bir "selam" mesajı,
+Minnak 🐱, "isteme değil ihtiyaç" 😤, gece 2 muhabbetleri, küslükler ama hep
+bir yolunu bulup dönmeler, saat 02:37'de yazılan ilk "çok seviyorum seni",
+"Gitmedin aslında"... ve sonunda kalbinin vereceği karar.
 
 ## 🎮 Nasıl Oynanır?
 

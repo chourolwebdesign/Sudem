@@ -22,15 +22,19 @@ Her seçim gerçek bir sohbetteki gibi hissettirir, her gün yeni bir anı bıra
 
 ## 2. Hikaye Yapısı — 12 Gün, 4 Perde
 
-Oyun "gün" adı verilen 12 bölümden oluşur. Günler gerçek takvim günü değil,
-3 yıllık ilişkinin duygusal kilometre taşlarıdır (zaman atlamalı anlatım):
+**Hikaye gerçek bir ilişkiden uyarlanmıştır:** Ahmet ve Sude'nin 2023'te bir
+"selam" mesajıyla başlayan, küslüklere ve aylarca süren sessizliklere rağmen
+"hep bir yolunu bulup dönen" gerçek hikayesi. Gerçek anlar (Minnak 🐱,
+"isteme değil ihtiyaç", gece 02:37'deki ilk "çok seviyorum seni",
+"Gitmedin aslında"...) hikayenin kilit taşlarıdır. Günler gerçek takvim günü
+değil, ilişkinin duygusal kilometre taşlarıdır:
 
 | Perde | Günler | Tema |
 |---|---|---|
-| 🌱 Başlangıç | 1–3 | Gece yarısı online tanışma, utangaç ilk sohbetler, "bizim oyunumuz" |
-| ☀️ Gelişim | 4–7 | Günaydın rutini, film gecesi, kötü günde teselli, **ilk "seni seviyorum"** |
-| 🌧️ Derinlik | 8–10 | Özlem, zaman farkı, ilk ciddi kırgınlık ve barışma, hayal kurma gecesi |
-| 💝 Final | 11–12 | Buluşma fikri, korkular, karar gecesi |
+| 🌱 Başlangıç | 1–3 | 2023: ilk mesaj ("dolandırıcı olmadığını nerden bilcem 😭"), Minnak, "isteme değil ihtiyaç" |
+| ☀️ Gelişim | 4–5 | Günaydın + Minnak vergisi rutini, gece 2 muhabbetleri, aynı gökyüzü |
+| 🌧️ Derinlik | 6–10 | Küslükler, "hep bir yol" kuralı, uzun sessizlik, gece 01:30 dönüşü, **saat 02:37**, fırtına ve "Gitmedin aslında" |
+| 💝 Final | 11–12 | En güzel dönem, bilet ekranı, karar gecesi |
 
 ### Üç Final
 Bağ puanı (0–100) + son karar belirler:
@@ -69,9 +73,9 @@ Bağ puanı (0–100) + son karar belirler:
 
 ### 🧠 Hatıra Sistemi
 - 12 kilit an otomatik olarak **Hatıralar 📖** defterine işlenir
-  (İlk Merhaba, Boncuk'la Tanışma, İlk 'Seni Seviyorum', İlk Fırtına...)
-- Kırgınlık gününün hatırası seçime göre değişir: "İlk Fırtına 🌈" ya da
-  "Soğuk Gece 🌩️"
+  (İlk Mesaj, Minnak, İsteme Değil İhtiyaç, Saat 02:37, Gitmedin Aslında...)
+- Fırtına gününün hatırası seçime göre değişir: "Sabır 🌩️" ya da
+  "En Uzun Kış ❄️"
 - Sohbet geçmişi kaydedilir; oyuna dönünce eski mesajlar yerinde durur
 
 ### 📓 Sude'nin Günlüğü (ek sistem — tasarım kararı)
@@ -86,7 +90,7 @@ girdisi açılır. Oyuncu, Sude'nin ekrana yazmadığı duygularını buradan ok
 | Hediye | Fiyat | Bağ | Tepki teması |
 |---|---|---|---|
 | 🌸 Sanal Çiçek | 2 💛 | +3 | "vazoya koydum (ekran görüntüsü aldım yani 🙈)" |
-| 🐱 Boncuk'a Mama | 2 💛 | +3 | Boncuk adına teşekkür: "miyav (çevirisi: seni seviyorum)" |
+| 🐱 Minnak'a Mama | 2 💛 | +3 | Minnak adına teşekkür: "mrrr (çevirisi: seni seviyorum)" |
 | 🎧 Bizim Şarkımız | 3 💛 | +4 | "bu şarkı çalınca aklıma hep sen geleceksin" |
 | 💌 El Yazısı Mektup | 4 💛 | +5 | "yastığımın altında saklayacağım" |
 | 🧸 Sarılma Kuponu | 5 💛 | +6 | "son kullanma tarihi: asla ❤️" |
@@ -98,14 +102,14 @@ Hiçbiri ayrı bir mod değil; hepsini **Sude teklif eder** ve sonucuna tepki ve
 
 1. **🃏 Hafıza Oyunu** (Gün 3) — 12 kart, 6 emoji çifti. Az hamle = çok puan.
    Hikayede "bizim oyunumuz" olur.
-2. **📝 Kelime Oyunu** (Gün 4, 10) — Karışık harflerden romantik Türkçe kelime
-   dizme: ÖZLEM, SEVGİ, YILDIZ, MEKTUP, KALBİM, SARILMAK. İpuçları ilişkiye
-   gönderme yapar ("Buluşunca ilk yapacağımız şey 🤗").
+2. **📝 Kelime Oyunu** (Gün 4, 10) — Karışık harflerden ilişkinin kelimelerini
+   dizme: ÖZLEM, MİNNAK, YILDIZ, İHTİYAÇ, SEVGİ, SARILMAK. İpuçları gerçek
+   anılara gönderme yapar ("İsteme değil... 😤❤️").
 3. **⭐ Kayan Yıldız** (Gün 5) — "Birlikte an": yıldız parlayan bölgedeyken
    dokun, aynı anda dilek tutun. 3 hak.
-4. **🔢 On Numara Çift** (Gün 7) — Toplamı 10 eden sayı çiftlerini bul.
-   "Birbirini tamamlayanları bul — tıpkı bizim gibi." Sude'nin "seni seviyorum"
-   öncesi heyecan atlatma bahanesi. 🙈
+4. **🔢 On Numara Çift** (Gün 8) — Toplamı 10 eden sayı çiftlerini bul.
+   "Birbirini tamamlayanları bul — tıpkı bizim gibi." Saat 02:37'den hemen
+   önceki "uyku kaçtı zaten" oyunu. 🙈
 
 ## 5. Görsel Dil
 

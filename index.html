@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="theme-color" content="#ffdbe7">
+<title>Sude 🌸</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌸</text></svg>">
+</head>
+<body>
+
+<div id="stars"></div>
+
+<div id="app">
+
+  <!-- ══════════ AÇILIŞ EKRANI ══════════ -->
+  <section id="screen-title" class="screen active">
+    <div class="title-inner">
+      <div class="title-blossom">🌸</div>
+      <h1 class="game-title">Sude</h1>
+      <p class="game-subtitle">iki şehir, bir kalp ❤️</p>
+      <div class="title-buttons">
+        <button id="btn-continue" class="btn btn-primary hidden">Devam Et 💌</button>
+        <button id="btn-newgame" class="btn btn-primary">Yeni Başlangıç ✨</button>
+        <button id="btn-memories-title" class="btn btn-soft hidden">Hatıralar 📖</button>
+        <button id="btn-settings" class="btn btn-soft">Ayarlar ⚙️</button>
+      </div>
+      <p class="title-footer">seninle her şey daha güzel 🥺</p>
+    </div>
+  </section>
+
+  <!-- ══════════ İSİM EKRANI ══════════ -->
+  <section id="screen-name" class="screen">
+    <div class="name-inner">
+      <div class="name-emoji">💌</div>
+      <h2>Sude sana nasıl seslensin?</h2>
+      <input id="input-name" type="text" maxlength="14" placeholder="adını yaz..." autocomplete="off">
+      <button id="btn-name-ok" class="btn btn-primary">Başlayalım 🌸</button>
+    </div>
+  </section>
+
+  <!-- ══════════ ANA EKRAN (SOHBET) ══════════ -->
+  <section id="screen-chat" class="screen">
+    <header id="chat-header">
+      <div class="chat-avatar" id="sude-avatar">🌸</div>
+      <div class="chat-title">
+        <div class="chat-name">Sude</div>
+        <div class="chat-status" id="sude-status">çevrimiçi 💚</div>
+      </div>
+      <div class="chat-hud">
+        <div class="hud-hearts" id="hud-hearts" title="Kalp Puanı">💛 <span id="hearts-count">0</span></div>
+        <button class="hud-btn" id="btn-menu" title="Menü">🎀</button>
+      </div>
+    </header>
+
+    <div id="affection-wrap" title="Bağınız">
+      <div class="aff-heart">❤️</div>
+      <div class="aff-bar"><div class="aff-fill" id="aff-fill"></div></div>
+      <div class="aff-label" id="aff-label">Bağınız</div>
+    </div>
+
+    <div id="chat-log"></div>
+
+    <div id="typing" class="hidden">
+      <span class="typing-avatar">🌸</span>
+      <span class="typing-bubble"><i></i><i></i><i></i></span>
+    </div>
+
+    <div id="choices"></div>
+
+    <div id="daybar" class="hidden">
+      <button id="btn-nextday" class="btn btn-primary">Yeni Güne Başla ☀️</button>
+    </div>
+  </section>
+
+  <!-- ══════════ MENÜ PANELİ ══════════ -->
+  <div id="menu-panel" class="panel hidden">
+    <div class="panel-card">
+      <h3>🎀 Menü</h3>
+      <button class="btn btn-soft panel-btn" id="btn-open-memories">📖 Hatıralar</button>
+      <button class="btn btn-soft panel-btn" id="btn-open-gifts">🎁 Hediye Gönder</button>
+      <button class="btn btn-soft panel-btn" id="btn-open-journal">📓 Günlüğüm</button>
+      <button class="btn btn-soft panel-btn" id="btn-toggle-music">🎵 Müzik: Açık</button>
+      <button class="btn btn-soft panel-btn" id="btn-toggle-rain">🌧️ Yağmur: Kapalı</button>
+      <button class="btn btn-soft panel-btn" id="btn-back-title">🏠 Ana Ekran</button>
+      <button class="btn btn-ghost panel-btn" id="btn-close-menu">Kapat ✖️</button>
+    </div>
+  </div>
+
+  <!-- ══════════ HATIRALAR ══════════ -->
+  <div id="memories-panel" class="panel hidden">
+    <div class="panel-card">
+      <h3>📖 Hatıralarımız</h3>
+      <div id="memories-list"></div>
+      <button class="btn btn-ghost panel-btn" id="btn-close-memories">Kapat ✖️</button>
+    </div>
+  </div>
+
+  <!-- ══════════ HEDİYELER ══════════ -->
+  <div id="gifts-panel" class="panel hidden">
+    <div class="panel-card">
+      <h3>🎁 Sude'ye Hediye</h3>
+      <p class="panel-hint">Kalp puanların: <b id="gift-hearts">0</b> 💛<br><small>Mini oyunlarla kalp puanı kazanabilirsin ✨</small></p>
+      <div id="gifts-list"></div>
+      <button class="btn btn-ghost panel-btn" id="btn-close-gifts">Kapat ✖️</button>
+    </div>
+  </div>
+
+  <!-- ══════════ GÜNLÜK ══════════ -->
+  <div id="journal-panel" class="panel hidden">
+    <div class="panel-card">
+      <h3>📓 Günlüğüm</h3>
+      <div id="journal-list"></div>
+      <button class="btn btn-ghost panel-btn" id="btn-close-journal">Kapat ✖️</button>
+    </div>
+  </div>
+
+  <!-- ══════════ MİNİ OYUN ══════════ -->
+  <div id="minigame-panel" class="panel hidden">
+    <div class="panel-card wide">
+      <h3 id="minigame-title">🎮</h3>
+      <p id="minigame-hint" class="panel-hint"></p>
+      <div id="minigame-area"></div>
+    </div>
+  </div>
+
+  <!-- ══════════ GÜN GEÇİŞ KARTI ══════════ -->
+  <div id="daycard" class="daycard hidden">
+    <div class="daycard-inner">
+      <div class="daycard-emoji" id="daycard-emoji">🌙</div>
+      <div class="daycard-title" id="daycard-title">Gün 1</div>
+      <div class="daycard-sub" id="daycard-sub"></div>
+    </div>
+  </div>
+
+  <!-- ══════════ AYARLAR ══════════ -->
+  <div id="settings-panel" class="panel hidden">
+    <div class="panel-card">
+      <h3>⚙️ Ayarlar</h3>
+      <button class="btn btn-soft panel-btn" id="btn-set-music">🎵 Müzik: Açık</button>
+      <button class="btn btn-soft panel-btn" id="btn-set-rain">🌧️ Yağmur: Kapalı</button>
+      <button class="btn btn-soft panel-btn" id="btn-reset">🗑️ Kaydı Sil</button>
+      <button class="btn btn-ghost panel-btn" id="btn-close-settings">Kapat ✖️</button>
+    </div>
+  </div>
+
+  <div id="toast" class="hidden"></div>
+  <div id="fx-layer"></div>
+</div>
+
+<script src="js/audio.js"></script>
+<script src="js/state.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/minigames.js"></script>
+<script src="js/story.js"></script>
+<script src="js/engine.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
